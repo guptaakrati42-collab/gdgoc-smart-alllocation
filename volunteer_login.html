@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer_login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form>
+            <div class="container">
+                <script type="module" src="main.js"></script>
+                <div  class="input-container">
+                    <input type="text"  class="input-container" placeholder="Enter your name" width="40%" required><br><br>
+
+                </div>
+                <div class="input-container">
+                    <input type="tel"   class="input-container" id="phoneNumber" placeholder="Enter your phone number" width="40%" required><br>
+                </div>
+
+                <div class="input-container">
+                    <select id="profession">
+                        <option value=""disabled selected>Select your profession</option>
+                        <option value="Medical">Medical/First Aid</option>
+                        <option value="Elecrician">Elecrician/Technical</option>
+                        <option value="Plumber">Plumber/Infrastructure</option>
+                    </select> 
+                </div>
+                
+                <div id="recaptcha-container"></div>
+                <button id="btn-otp" onclick="sendOTP(event)">
+                      Send OTP
+                </button> 
+                <div id="otp-area"></div>
+
+            </div>
+
+            
+            
+
+            
+            
+        </form>
+
+</body>
+</html>
